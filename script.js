@@ -1,4 +1,4 @@
-
+alert('I love you')
 
 function ageInDays() {
     var birthYear = prompt("Enter your birth year")
@@ -11,10 +11,6 @@ function ageInDays() {
 }
 
 
-var elem = document.getElementById("ageInDays")
-elem.innerText = "ageInDayss"
-
 function reset() {
-  var reset_elem = document.getElementById("ageInDays")
-  reset_elem.innerText = ""
+    document.getElementById("ageInDays").remove()
 }

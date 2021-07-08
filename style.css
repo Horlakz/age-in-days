@@ -1,5 +1,10 @@
+body{
+    background-color: lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .container-1{
-    border: 1px solid black;
+    border: 1px solid rgb(216, 19, 19);
     width: 75%;
     margin: 0 auto;
     top: 30vh;
@@ -23,15 +28,14 @@
     display: flex;
     align-items: center;
 }
-
+/* 
 @media (max-width:700px) {
     
     .flexbox-container-1{
-        display: flex;
-        /* border: 1px solid black; */
+        display: grid;
+        /* border: 1px solid black; *
         padding: 10px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
     }
-}
+} */
