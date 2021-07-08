@@ -2,6 +2,8 @@
     border: 1px solid black;
     width: 75%;
     margin: 0 auto;
+    top: 30vh;
+    position: relative;
 }
 
 .flexbox-container-1{
