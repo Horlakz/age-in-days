@@ -1,14 +1,18 @@
 body{
-    background-color: lightblue;
+    background-color: rgb(181, 219, 231);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
+
 .container-1{
-    border: 1px solid rgb(216, 19, 19);
+    border: 0.2rem solid rgb(216, 19, 19);
+    box-shadow: 0.2rem 0.27rem 0.27rem 0.1rem black;
     width: 75%;
     margin: 0 auto;
     top: 30vh;
     position: relative;
+    background-color: rgb(22, 73, 141);
 }
 
 .flexbox-container-1{
@@ -21,6 +25,7 @@ body{
 
 .container-1 h2{
     text-align: center;
+    padding:0.4rem;
 }
 
 .flexbox-container-1 div{
@@ -28,14 +33,45 @@ body{
     display: flex;
     align-items: center;
 }
-/* 
+
+#flexbox-result{
+    border:3px dotted rgb(80, 190, 80);
+    box-shadow: -0.3rem 0.2rem 0.2rem 0.1rem black;
+    width: 24.5rem;
+    height: 3.5rem;
+    
+}
+
+/* #flexbox-result::before{
+    content: attr(Check your result here);
+} */
+
+
 @media (max-width:700px) {
     
+    .container-1{
+        text-align: center;
+        font-size: large;
+        padding: 2px;
+    }
+
     .flexbox-container-1{
         display: grid;
-        /* border: 1px solid black; *
+        /* border: 1px solid black; */
         padding: 10px;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
+        /* justify-content: center; */
+        /* align-items: center; */
     }
-} */
+
+    .flexbox-container-1 div{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #flexbox-result{
+        width: 18rem;
+        height: 5rem;
+    }
+}

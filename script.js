@@ -1,4 +1,3 @@
-alert('I love you')
 
 function ageInDays() {
     var birthYear = prompt("Enter your birth year")
